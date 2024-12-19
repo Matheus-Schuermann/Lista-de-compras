@@ -1,0 +1,87 @@
+/* Definindo o estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3d; /* Cor de fundo azul marinho */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para o contêiner principal */
+main {
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para a lista de compras */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    max-height: 300px;  /* Limite de altura */
+    overflow-y: auto;   /* Adiciona a rolagem vertical */
+    border: 1px solid #ccc; /* Bordas suaves */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para os itens da lista */
+li {
+    display: flex;           /* Flexbox para alinhar os itens e o botão */
+    justify-content: space-between; /* Espalha o conteúdo da lista entre a esquerda e a direita */
+    align-items: center;     /* Alinha verticalmente no centro */
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 5px;
+    max-width: 100%;         /* Impede que o item ultrapasse a largura da lista */
+    word-wrap: break-word;   /* Garante que o texto dentro do item se quebre ao atingir o limite */
+    overflow-wrap: break-word; /* A alternativa ao word-wrap */
+    word-break: break-all;   /* Garante a quebra de palavras longas */
+    flex-wrap: wrap;         /* Permite que o conteúdo quebre e se ajuste dentro do item */
+}
+
+/* Estilo para o botão de adicionar */
+button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006f8b;
+}
+
+/* Estilo para o input de item */
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+/* Estilo para o botão de remover */
+.remove-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
