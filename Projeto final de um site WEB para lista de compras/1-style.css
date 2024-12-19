@@ -1,0 +1,83 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-color: #001f3d; /* Azul marinho */
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Cor do texto padrão */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Garante que o conteúdo não fique completamente centralizado, mas alinhado ao topo */
+    flex-direction: column; /* Para empilhar o conteúdo verticalmente */
+    height: 100vh; /* Usa 100% da altura da tela */
+    text-align: center; /* Centraliza o texto dentro do conteúdo */
+    
+}
+
+header {
+    gap: 10px;
+    width: 100%; /* Garante que ocupe toda a largura */
+    background-color: #003d6b; /* Cor de fundo do cabeçalho */
+    padding: 0px 0;
+    position: absolute;
+    top: 0; /* Fixa o cabeçalho no topo da página */
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+    margin-top: 100px;
+    
+}
+
+main {
+    height: 300px;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000; /* Cor do texto dentro do main */
+    border-radius: 50px;
+    margin-left: 350px;
+    margin-top: 150px; /* Distância do topo para o conteúdo, agora maior para dar mais espaço */
+    text-align: center; /* Centraliza o texto no main */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+footer {
+    width: 100%; /* Garante que ocupe toda a largura */
+    background-color: #092f4b; /* Cor de fundo do rodapé */
+    padding: 10px 0;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 70px;
+}
+
+button:hover {
+    background-color: #006f8b;
+}
